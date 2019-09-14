@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>temp</title>
+    <!--    <script src="/static/js/jquery.min.js"></script>-->
+    <!--    <script src="/static/js/bootstrap.min.js"></script>-->
+    <!--    <script src="/static/js/toastr.min.js"></script>-->
+    <!--    <link rel="stylesheet" href="/static/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="/static/css/toastr.min.css">-->
+</head>
+<body>
+    <h1>temp test</h1>
+    <hr>
+    <hr>
+    {% for article in latest_articlesa %}
+        {{article.username}}
+        {{article.email}}
+        <hr>
+    {% endfor %}
+
+
+</body>
+</html>

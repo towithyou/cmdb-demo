@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>List view page</h1>
+<hr>
+<ul>
+    {% for user in object_list %}
+    <li>
+        {{ user.username }}
+    </li>
+    {% endfor %}
+
+    {% for p in paginator.page_range %}
+    <a href="{% url 'listview' %}?page={{ p }}">{{ p }}</a>
+    {% endfor %}
+</ul>
+</body>
+</html>
